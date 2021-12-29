@@ -1,0 +1,3 @@
+project=esbuild_demo
+test=rspec
+template=erb

@@ -1,0 +1,24 @@
+{
+  "name": "esbuild_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matej <matejpale@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@popperjs/core": "^2.11.0",
+    "concurrently": "^6.5.1",
+    "esbuild": "^0.14.9",
+    "esbuild-sass-plugin": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "build": "esbuild ./apps/web/assets/javascripts/Demo.jsx --bundle --outfile=./public/assets/build.js --watch",
+    "css": "npx  tailwindcss -i ./apps/web/assets/stylesheets/main.css -o ./public/assets/build.css TAILWIND_MODE=watch --watch",
+    "dev": "node esbuild-live-reload.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.8"
+  }
+}
