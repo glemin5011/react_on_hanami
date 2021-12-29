@@ -41,6 +41,8 @@ To enter the development server (default on: http://localhost:3000/ - you can ch
 
 To shut down the server - Ctrl + C.
 
+FYI: I have deleted the secret from .env.development and .env.test - these would have to be replaced with your own, as I do not have an installer for this repo.
+
 ## Setup (Hanami)
 
 How to run tests:

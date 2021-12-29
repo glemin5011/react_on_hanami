@@ -3,6 +3,4 @@
 /tmp
 .env.local
 .env.*.local
-.env.test
-.env.development
 node_modules

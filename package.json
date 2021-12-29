@@ -2,7 +2,6 @@
   "name": "esbuild_demo",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Matej <matejpale@gmail.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
