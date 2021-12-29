@@ -1,3 +1,2 @@
 js: yarn build
-css: yarn css
 shotgun: shotgun --port=3000

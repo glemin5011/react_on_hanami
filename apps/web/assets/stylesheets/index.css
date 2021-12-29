@@ -1,0 +1,6 @@
+/* CSS file is imported in index.js for custom css*/
+
+#hanami-logo {
+  width: 4rem !important;
+  height: 4rem !important;
+}
