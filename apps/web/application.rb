@@ -143,7 +143,8 @@ module Web
         # Specify sources for assets
         #
         sources << [
-          'assets'
+          'assets',
+          'assets/javascripts/compiled'
         ]
       end
 
