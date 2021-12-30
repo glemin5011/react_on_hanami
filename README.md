@@ -6,7 +6,9 @@ I made this template so that you can quickly get started with developing an app 
 
 ## Background Info
 
-This template uses Esbuild to compile Javascript and JSX files and output the bundled JS and CSS to /public/assets folder. It also uses Foreman to run both the Shotgun development server (which allows code reloading, see [here](https://guides.hanamirb.org/v1.3/projects/code-reloading/)) and the Esbuild script that will watch for any changes in the JS / JSX files and then recompile accordingly.
+This template uses Esbuild to compile Javascript and JSX files and output the bundled JS and CSS to /public/assets folder. It also uses Foreman to run both the Shotgun development server (which allows code reloading, see [here](https://guides.hanamirb.org/v1.3/projects/code-reloading/)) and the Esbuild script that will watch for any changes in the JS / JSX files and then recompile accordingly. 
+
+If for some reason Shotgun is not working for you, you can just open Procfile.dev and replace the line `shotgun: shotgun --port=3000` with `hanami: bundle exec hanami server`. This will start Hanami's default server on localhost:2300. Personally, I prefer the Hanami server, because shotgun sometimes does not show changes to JS and I do not really change the .html.erb files (which Shotgun reloads reliably).
 
 Unfortunately, a 'hot reloading' feature like with Webpack does not work in this setup (as far as I can tell) - this means that while the server is running, you have to reload the page to see changes you made after Esbuild recompiles the JS/JSX files.
 
